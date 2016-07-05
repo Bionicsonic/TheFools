@@ -4,11 +4,12 @@ using System.Collections;
 public class ThirdPersonCamera : MonoBehaviour {
 
 	public Transform target;
-	public float Distance = 5f;
+	public float Distance = 7f;
 	public float height = 1f;
 
 	private Transform _myTransform;
 
+// Just a notifier best to ignore
 	void Start () {
 		if(target == null)
 			Debug.LogWarning("No Target");
