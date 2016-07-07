@@ -5,7 +5,7 @@ public class ThirdPersonCamera : MonoBehaviour {
 
 	public Transform target;
 	public float Distance = 7f;
-	public float height = 1f;
+	public float height = 7f;
 
 	private Transform _myTransform;
 

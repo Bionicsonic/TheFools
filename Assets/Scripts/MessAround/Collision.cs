@@ -6,6 +6,7 @@ public class Collision : MonoBehaviour {
 	public float speed = 6;
 	public float gravity = 10;
 	public float jumpSpeed = 10;
+	
 	Vector3 velocity;
 
 	Rigidbody myRigidbody;
@@ -19,9 +20,6 @@ public class Collision : MonoBehaviour {
 		Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 		Vector3 direction = input.normalized;
 		velocity = direction * speed;
-		Input.GetButton("Jump");
-			direction.y = jumpSpeed;
-			direction.y -= gravity * Time.deltaTime;
 	}
 
 	void FixedUpdate() {
